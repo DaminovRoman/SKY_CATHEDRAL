@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Sky Cathedral — Частная авиация без расписания. Свобода начинается выше горизонта</title>
+<meta name="description" content="Sky Cathedral — авиационная платформа, где каждый рейс проектируется вокруг вашего дня, а не расписания аэропорта. Флот, направления, членство и персональный авиационный консультант.">
+<meta name="keywords" content="частный самолет, аренда самолета, чартер, бизнес авиация, jet card, fractional ownership">
+<meta name="author" content="Sky Cathedral">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://skycathedral.aero/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sky Cathedral">
+<meta property="og:title" content="Sky Cathedral — Свобода начинается выше горизонта">
+<meta property="og:description" content="Каждый маршрут начинается тогда, когда удобно вам. Персональная авиация, спроектированная вокруг вашего времени.">
+<meta property="og:image" content="/assets/og-cover.jpg">
+<meta property="og:url" content="https://skycathedral.aero/">
+<meta property="og:locale" content="ru_RU">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sky Cathedral — Свобода начинается выше горизонта">
+<meta name="twitter:description" content="Каждый маршрут начинается тогда, когда удобно вам.">
+<meta name="twitter:image" content="/assets/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="font" href="/assets/fonts/canela-light.woff2" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="/assets/fonts/suisse-regular.woff2" type="font/woff2" crossorigin>
+
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="SkyCharter.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Sky Cathedral",
+  "description": "Персональная авиация, спроектированная вокруг вашего времени.",
+  "url": "https://skycathedral.aero/",
+  "logo": "https://skycathedral.aero/assets/logo.svg",
+  "sameAs": [
+    "https://www.instagram.com/skycathedral",
+    "https://t.me/skycathedral"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "reservations",
+    "telephone": "+7-000-000-00-00",
+    "availableLanguage": ["ru", "en"]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Sky Cathedral",
+  "image": "https://skycathedral.aero/assets/og-cover.jpg",
+  "priceRange": "$$$$",
+  "telephone": "+7-000-000-00-00",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Москва",
+    "addressCountry": "RU"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как быстро можно организовать вылет?",
+      "acceptedAnswer": { "@type": "Answer", "text": "В большинстве направлений — от четырёх часов с момента заявки. Для регулярных маршрутов возможен вылет от восьмидесяти минут." }
+    },
+    {
+      "@type": "Question",
+      "name": "Чем Jet Card отличается от On Demand?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Jet Card — заранее оплаченный банк часов с фиксированной ставкой. On Demand — оплата за конкретный рейс без обязательств на будущее." }
+    },
+    {
+      "@type": "Question",
+      "name": "Можно ли изменить маршрут после вылета?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Да. Авиационный консультант остаётся на связи весь полёт и может скорректировать план посадки в реальном времени." }
+    },
+    {
+      "@type": "Question",
+      "name": "Что входит в подготовку салона?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Конфигурация кресел, температура, освещение и меню согласуются до вылета и готовы к моменту посадки в самолёт." }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Sky Cathedral", "item": "https://skycathedral.aero/" },
+    { "@type": "ListItem", "position": 2, "name": "Флот", "item": "https://skycathedral.aero/#fleet" },
+    { "@type": "ListItem", "position": 3, "name": "Направления", "item": "https://skycathedral.aero/#destinations" },
+    { "@type": "ListItem", "position": 4, "name": "Членство", "item": "https://skycathedral.aero/#membership" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ ATMOSPHERE LAYER ============ -->
+<div class="atmosphere" aria-hidden="true">
+  <div class="atmosphere__cloud atmosphere__cloud--1"></div>
+  <div class="atmosphere__cloud atmosphere__cloud--2"></div>
+  <div class="atmosphere__cloud atmosphere__cloud--3"></div>
+  <div class="atmosphere__aurora"></div>
+</div>
+<div class="spotlight" aria-hidden="true"></div>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader__horizon">
+    <span class="preloader__node"></span>
+  </div>
+  <span class="preloader__mark">SKY CATHEDRAL</span>
+</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__mark" aria-label="Sky Cathedral — на главную">
+    <span class="nav__mark-glyph" aria-hidden="true">✦</span>
+    <span class="nav__mark-text">SKY CATHEDRAL</span>
+  </a>
+
+  <nav class="nav__links" aria-label="Основная навигация">
+    <a href="#philosophy" class="nav__link"><span>Философия</span></a>
+    <a href="#fleet" class="nav__link"><span>Флот</span></a>
+    <a href="#experience" class="nav__link"><span>Опыт</span></a>
+    <a href="#destinations" class="nav__link"><span>Направления</span></a>
+    <a href="#membership" class="nav__link"><span>Членство</span></a>
+  </nav>
+
+  <button class="nav__cta" data-open-request>
+    <span>Назначить вылет</span>
+  </button>
+
+  <button class="nav__burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav aria-label="Мобильная навигация">
+    <a href="#philosophy">Философия</a>
+    <a href="#fleet">Флот</a>
+    <a href="#experience">Опыт</a>
+    <a href="#destinations">Направления</a>
+    <a href="#membership">Членство</a>
+    <a href="#stories">Истории</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+  <button class="mobile-menu__cta" data-open-request>Назначить вылет</button>
+</div>
+
+<main id="top">
+
+  <!-- ============ 1. HERO ============ -->
+  <section class="hero" id="hero" aria-label="Главный экран">
+    <div class="hero__sky" aria-hidden="true">
+      <div class="hero__cloud-layer hero__cloud-layer--far"></div>
+      <div class="hero__cloud-layer hero__cloud-layer--mid"></div>
+      <div class="hero__cloud-layer hero__cloud-layer--near"></div>
+      
+      <div class="hero__horizon-glow" aria-hidden="true"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal-line">Персональная авиация</p>
+      <h1 class="hero__title">
+        <span class="reveal-line">Свобода начинается</span>
+        <span class="reveal-line">выше горизонта.</span>
+      </h1>
+      <p class="hero__subtitle reveal-line">Расписание аэропорта не диктует ваш день — вы задаёте час вылета, мы прокладываем к нему маршрут.</p>
+
+      <div class="hero__actions reveal-line">
+        <button class="btn btn--primary magnetic" data-open-request>
+          <span>Назначить вылет</span>
+        </button>
+        
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- ============ 2. PHILOSOPHY ============ -->
+  <section class="philosophy" id="philosophy" aria-label="Философия компании">
+    <div class="philosophy__inner">
+      <span class="section-eyebrow reveal-on-scroll">Почему мы существуем</span>
+      <p class="philosophy__statement">
+        <span class="reveal-word">Время</span>
+        <span class="reveal-word">—</span>
+        <span class="reveal-word philosophy__accent">самый</span>
+        <span class="reveal-word philosophy__accent">дорогой</span>
+        <span class="reveal-word">актив,</span>
+        <span class="reveal-word">которым</span>
+        <span class="reveal-word">вы</span>
+        <span class="reveal-word">располагаете.</span>
+      </p>
+      <p class="philosophy__body reveal-on-scroll">
+        Каждый рейс проектируется вокруг вашего дня — не наоборот.
+        Мы убираем расписание аэропорта из уравнения и оставляем только маршрут,
+        который совпадает с тем, как вы уже живёте.
+      </p>
+
+      <div class="philosophy__figures" role="list">
+        <div class="figure reveal-on-scroll" role="listitem">
+          <span class="figure__number" data-count="80">0</span>
+          <span class="figure__unit">минут</span>
+          <span class="figure__label">от заявки до готовности к вылету</span>
+        </div>
+        <div class="figure reveal-on-scroll" role="listitem">
+          <span class="figure__number" data-count="24">0</span>
+          <span class="figure__unit">часа</span>
+          <span class="figure__label">консультант на связи, включая время в воздухе</span>
+        </div>
+        <div class="figure reveal-on-scroll" role="listitem">
+          <span class="figure__number" data-count="600">0</span>
+          <span class="figure__unit">аэропортов</span>
+          <span class="figure__label">вне регулярных маршрутов больших авиакомпаний</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. FLEET GALLERY ============ -->
+  <section class="fleet" id="fleet" aria-label="Флот">
+    <div class="fleet__header">
+      <span class="section-eyebrow reveal-on-scroll">Галерея</span>
+      <h2 class="section-title reveal-on-scroll">Флот, представленный как пространство</h2>
+      <p class="section-lede reveal-on-scroll">Наведите курсор на силуэт — вокруг него проявится свет и характеристики.</p>
+    </div>
+
+    <div class="fleet__gallery">
+
+      <article class="jet-exhibit reveal-on-scroll" data-jet="light" tabindex="0">
+        <div class="jet-exhibit__aura" aria-hidden="true"></div>
+        <div class="jet-exhibit__silhouette">
+          <img src="img/1.jpg" alt="Sky Cathedral — самолёт класса Light Class" class="jet-exhibit__photo" loading="lazy">
+          
+        </div>
+        <div class="jet-exhibit__info">
+          <h3 class="jet-exhibit__name">Light Class</h3>
+          <p class="jet-exhibit__tagline">Для маршрутов, где важна скорость решения</p>
+          <dl class="jet-exhibit__specs">
+            <div><dt>Пассажиры</dt><dd>6–8</dd></div>
+            <div><dt>Дальность</dt><dd>3 300 км</dd></div>
+            <div><dt>Скорость</dt><dd>780 км/ч</dd></div>
+            <div><dt>Высота полёта</dt><dd>13 700 м</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="jet-exhibit reveal-on-scroll" data-jet="midsize" tabindex="0">
+        <div class="jet-exhibit__aura" aria-hidden="true"></div>
+        <div class="jet-exhibit__silhouette">
+          <img src="img/2.jpg" alt="Sky Cathedral — самолёт класса Midsize Class" class="jet-exhibit__photo" loading="lazy">
+          
+        </div>
+        <div class="jet-exhibit__info">
+          <h3 class="jet-exhibit__name">Midsize Class</h3>
+          <p class="jet-exhibit__tagline">Баланс пространства и дальности без пересадок</p>
+          <dl class="jet-exhibit__specs">
+            <div><dt>Пассажиры</dt><dd>8–9</dd></div>
+            <div><dt>Дальность</dt><dd>5 200 км</dd></div>
+            <div><dt>Скорость</dt><dd>830 км/ч</dd></div>
+            <div><dt>Высота полёта</dt><dd>14 300 м</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="jet-exhibit reveal-on-scroll" data-jet="heavy" tabindex="0">
+        <div class="jet-exhibit__aura" aria-hidden="true"></div>
+        <div class="jet-exhibit__silhouette">
+          <img src="img/3.jpg" alt="Sky Cathedral — самолёт класса Long Range Class" class="jet-exhibit__photo" loading="lazy">
+          
+        </div>
+        <div class="jet-exhibit__info">
+          <h3 class="jet-exhibit__name">Long Range Class</h3>
+          <p class="jet-exhibit__tagline">Континенты соединяются без промежуточной посадки</p>
+          <dl class="jet-exhibit__specs">
+            <div><dt>Пассажиры</dt><dd>12–14</dd></div>
+            <div><dt>Дальность</dt><dd>11 900 км</dd></div>
+            <div><dt>Скорость</dt><dd>900 км/ч</dd></div>
+            <div><dt>Высота полёта</dt><dd>15 500 м</dd></div>
+          </dl>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="fleet__footer reveal-on-scroll">
+      <a href="#" class="text-link magnetic" data-jet-link="light">
+        <span>Открыть карточку самолёта</span>
+        <svg width="18" height="12" viewBox="0 0 18 12" aria-hidden="true"><path d="M1 6h15M11 1l5 5-5 5" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ 4. AIRCRAFT PAGE (detail template, shown for first jet) ============ -->
+  <section class="aircraft-detail" id="aircraft-detail" aria-label="Страница самолёта">
+    <div class="aircraft-detail__visual">
+      <div class="aircraft-detail__frame" id="aircraftFrame">
+        <img src="img/4.jpg" alt="Sky Cathedral — экстерьер самолёта Light Class" class="aircraft-detail__view is-active" data-view-target="exterior" loading="lazy">
+        <img src="img/5.jpg" alt="Sky Cathedral — салон Light Class, вид 360°" class="aircraft-detail__view" data-view-target="interior" loading="lazy">
+        <img src="img/6.jpg" alt="Sky Cathedral — план салона Light Class" class="aircraft-detail__view" data-view-target="plan" loading="lazy">
+      </div>
+      <div class="aircraft-detail__controls" role="tablist" aria-label="Режимы просмотра">
+        <button class="view-toggle is-active" role="tab" aria-selected="true" data-view="exterior">Экстерьер</button>
+        <button class="view-toggle" role="tab" aria-selected="false" data-view="interior">Салон 360°</button>
+        <button class="view-toggle" role="tab" aria-selected="false" data-view="plan">План салона</button>
+        
+      </div>
+    </div>
+
+    <div class="aircraft-detail__info">
+      <span class="section-eyebrow reveal-on-scroll">Light Class</span>
+      <h2 class="section-title reveal-on-scroll">Пространство, спроектированное для тишины</h2>
+      <p class="section-lede reveal-on-scroll">
+        Восемь мест, расположенных так, чтобы у каждого было собственное поле света и тишины.
+        Ни одно кресло не проектировалось «средним» — под каждое разработана своя зона комфорта.
+      </p>
+
+      <dl class="aircraft-detail__tech reveal-on-scroll">
+        <div><dt>Дальность полёта</dt><dd>3 300 км без дозаправки</dd></div>
+        <div><dt>Конфигурация кресел</dt><dd>4 варианта, включая переговорную зону</dd></div>
+        <div><dt>Маршруты</dt><dd>Москва — Лондон, Москва — Дубай, Москва — Женева</dd></div>
+        <div><dt>Интерьер</dt><dd>Индивидуальная отделка по согласованию</dd></div>
+      </dl>
+
+      <button class="btn btn--outline magnetic" data-open-request>
+        <span>Обсудить конфигурацию</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ 5. EXPERIENCE ============ -->
+  <section class="experience" id="experience" aria-label="Опыт полёта">
+    <div class="experience__header">
+      <span class="section-eyebrow reveal-on-scroll">Не преимущества — детали</span>
+      <h2 class="section-title reveal-on-scroll">То, что происходит между заявкой и посадкой</h2>
+    </div>
+
+    <div class="experience__grid">
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">01</span>
+        <h3>Персональный терминал</h3>
+        <p>Отдельный вход, отдельная зона досмотра, отдельная тишина — вдали от общего потока аэропорта.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">02</span>
+        <h3>Минимум ожидания</h3>
+        <p>От автомобиля до кресла в салоне — обычно меньше пятнадцати минут, без очередей и повторных проверок.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">03</span>
+        <h3>Конфиденциальность</h3>
+        <p>Список пассажиров, маршрут и цель поездки не становятся достоянием посторонних глаз.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">04</span>
+        <h3>Авиационный консультант</h3>
+        <p>Один и тот же человек ведёт маршрут от идеи до посадки — и остаётся на связи в воздухе.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">05</span>
+        <h3>Шеф-повар на борту</h3>
+        <p>Меню согласуется заранее — от лёгкого завтрака до полноценного ужина под ваш часовой пояс.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">06</span>
+        <h3>Связь на высоте</h3>
+        <p>Стабильный Wi-Fi для звонков и работы — рабочий день не прерывается на время полёта.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">07</span>
+        <h3>Зона отдыха</h3>
+        <p>На дальних маршрутах — конфигурация с полноценным спальным местом и приглушённым светом.</p>
+      </div>
+      <div class="experience__item reveal-on-scroll">
+        <span class="experience__mark" aria-hidden="true">08</span>
+        <h3>Трансфер без границ</h3>
+        <p>Автомобиль встречает у трапа в любой точке маршрута — переход от неба к земле остаётся незаметным.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. DESTINATIONS / GLOBE ============ -->
+  <section class="destinations" id="destinations" aria-label="Направления">
+    <div class="destinations__header">
+      <span class="section-eyebrow reveal-on-scroll">География без ограничений</span>
+      <h2 class="section-title reveal-on-scroll">Маршруты, которых нет в расписании</h2>
+    </div>
+
+    <div class="globe" id="globe">
+      <svg viewBox="0 0 600 600" class="globe__svg" role="img" aria-label="Интерактивная карта маршрутов Sky Cathedral">
+        <circle cx="300" cy="300" r="220" class="globe__sphere"/>
+        <ellipse cx="300" cy="300" rx="220" ry="70" class="globe__meridian"/>
+        <ellipse cx="300" cy="300" rx="220" ry="140" class="globe__meridian"/>
+        <ellipse cx="300" cy="300" rx="150" ry="220" class="globe__meridian"/>
+        <ellipse cx="300" cy="300" rx="70" ry="220" class="globe__meridian"/>
+        <line x1="80" y1="300" x2="520" y2="300" class="globe__meridian"/>
+
+        <g class="globe__route" data-route="msk-lon">
+          <path d="M300 220 Q 230 200 175 215" class="globe__route-path"/>
+          <circle cx="300" cy="220" r="4" class="globe__node"/>
+          <circle cx="175" cy="215" r="4" class="globe__node"/>
+        </g>
+        <g class="globe__route" data-route="msk-dxb">
+          <path d="M300 220 Q 340 280 365 330" class="globe__route-path"/>
+          <circle cx="365" cy="330" r="4" class="globe__node"/>
+        </g>
+        <g class="globe__route" data-route="msk-nyc">
+          <path d="M300 220 Q 200 180 120 250" class="globe__route-path"/>
+          <circle cx="120" cy="250" r="4" class="globe__node"/>
+        </g>
+        <g class="globe__route" data-route="msk-tyo">
+          <path d="M300 220 Q 400 200 470 260" class="globe__route-path"/>
+          <circle cx="470" cy="260" r="4" class="globe__node"/>
+        </g>
+      </svg>
+
+      <div class="globe__labels">
+        <button class="globe__label" style="--x:29.2%; --y:35.8%; --ly:-1.6em;" data-route="msk-lon">Лондон</button>
+        <button class="globe__label" style="--x:60.8%; --y:55%; --ly:1.8em;" data-route="msk-dxb">Дубай</button>
+        <button class="globe__label" style="--x:20%; --y:41.7%; --ly:1.6em; --lx:-0.6em;" data-route="msk-nyc">Нью-Йорк</button>
+        <button class="globe__label" style="--x:78.3%; --y:43.3%; --ly:-1.6em; --lx:-1.2em;" data-route="msk-tyo">Токио</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. MEMBERSHIP ============ -->
+  <section class="membership" id="membership" aria-label="Программы членства">
+    <div class="membership__header">
+      <span class="section-eyebrow reveal-on-scroll">Форматы доступа</span>
+      <h2 class="section-title reveal-on-scroll">Выберите степень вовлечённости</h2>
+    </div>
+
+    <div class="membership__list">
+      <div class="membership__row reveal-on-scroll">
+        <div class="membership__row-content">
+          <div class="membership__row-name">
+            <h3>On Demand</h3>
+            <p>Оплата за конкретный рейс, без обязательств на будущее.</p>
+          </div>
+          <div class="membership__row-detail">
+            <span>Для нерегулярных маршрутов и разовых решений</span>
+          </div>
+        </div>
+        <button class="text-link magnetic" data-open-request><span>Узнать больше</span></button>
+      </div>
+
+      <div class="membership__row reveal-on-scroll">
+        <div class="membership__row-content">
+          <div class="membership__row-name">
+            <h3>Jet Card</h3>
+            <p>Заранее оплаченный банк часов с фиксированной ставкой.</p>
+          </div>
+          <div class="membership__row-detail">
+            <span>Для тех, кто летает от восьми раз в год</span>
+          </div>
+        </div>
+        <button class="text-link magnetic" data-open-request><span>Узнать больше</span></button>
+      </div>
+
+      <div class="membership__row reveal-on-scroll">
+        <div class="membership__row-content">
+          <div class="membership__row-name">
+            <h3>Fractional Ownership</h3>
+            <p>Доля во флоте — с гарантированной доступностью борта.</p>
+          </div>
+          <div class="membership__row-detail">
+            <span>Для семей и компаний с постоянной потребностью</span>
+          </div>
+        </div>
+        <button class="text-link magnetic" data-open-request><span>Узнать больше</span></button>
+      </div>
+
+      <div class="membership__row reveal-on-scroll">
+        <div class="membership__row-content">
+          <div class="membership__row-name">
+            <h3>Корпоративные решения</h3>
+            <p>Управление флотом и маршрутной сетью для компании.</p>
+          </div>
+          <div class="membership__row-detail">
+            <span>Для команд с несколькими направлениями в месяц</span>
+          </div>
+        </div>
+        <button class="text-link magnetic" data-open-request><span>Узнать больше</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. STORIES ============ -->
+  <section class="stories" id="stories" aria-label="Истории клиентов">
+    <div class="stories__header">
+      <span class="section-eyebrow reveal-on-scroll">Голоса пассажиров</span>
+      <h2 class="section-title reveal-on-scroll">Истории, а не отзывы</h2>
+    </div>
+
+    <div class="stories__carousel" id="storiesCarousel">
+      <div class="stories__track">
+        <article class="story-slide is-active">
+          <p class="story-slide__quote">«Прилетел на встречу, которую назначил утром того же дня. К вечеру уже был дома. Раньше это заняло бы двое суток.»</p>
+          <span class="story-slide__meta">Основатель технологической компании — маршрут Москва — Женева</span>
+        </article>
+        <article class="story-slide">
+          <p class="story-slide__quote">«Никто не спросил, зачем я лечу. Спросили только, во сколько мне удобно.»</p>
+          <span class="story-slide__meta">Частный инвестор — маршрут Москва — Лондон</span>
+        </article>
+        <article class="story-slide">
+          <p class="story-slide__quote">«Дети уснули ещё до взлёта. Мы приземлились — они проснулись уже в отпуске.»</p>
+          <span class="story-slide__meta">Семейный маршрут — Москва — Дубай</span>
+        </article>
+      </div>
+
+      <div class="stories__nav">
+        <button class="stories__arrow" id="storyPrev" aria-label="Предыдущая история">
+          <svg width="20" height="14" viewBox="0 0 20 14"><path d="M19 7H1M7 1L1 7l6 6" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+        </button>
+        <div class="stories__dots" id="storyDots"></div>
+        <button class="stories__arrow" id="storyNext" aria-label="Следующая история">
+          <svg width="20" height="14" viewBox="0 0 20 14"><path d="M1 7h18M13 1l6 6-6 6" stroke="currentColor" fill="none" stroke-width="1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. FAQ ============ -->
+  <section class="faq" id="faq" aria-label="Частые вопросы">
+    <div class="faq__header">
+      <span class="section-eyebrow reveal-on-scroll">Вопросы</span>
+      <h2 class="section-title reveal-on-scroll">Прежде чем вы спросите</h2>
+    </div>
+
+    <div class="faq__list">
+      <div class="faq-item reveal-on-scroll">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Как быстро можно организовать вылет?</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-item__panel">
+          <p>В большинстве направлений — от четырёх часов с момента заявки. Для регулярных маршрутов возможен вылет от восьмидесяти минут, если борт уже находится в нужном аэропорту.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-on-scroll">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Чем Jet Card отличается от On Demand?</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-item__panel">
+          <p>Jet Card — заранее оплаченный банк часов с фиксированной ставкой и гарантированной доступностью борта. On Demand — оплата за конкретный рейс без обязательств на будущее.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-on-scroll">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Можно ли изменить маршрут после вылета?</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-item__panel">
+          <p>Да. Авиационный консультант остаётся на связи весь полёт и может скорректировать план посадки в реальном времени, если ваши планы меняются.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-on-scroll">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Что входит в подготовку салона?</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-item__panel">
+          <p>Конфигурация кресел, температура, освещение и меню согласуются до вылета и уже готовы к моменту, когда вы поднимаетесь на борт.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal-on-scroll">
+        <button class="faq-item__trigger" aria-expanded="false">
+          <span>Как обеспечивается конфиденциальность полёта?</span>
+          <span class="faq-item__icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-item__panel">
+          <p>Список пассажиров и маршрут доступны только экипажу и наземной службе конкретного аэропорта — информация не передаётся третьим сторонам.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. FINAL CTA ============ -->
+  <section class="final-cta" id="finalCta" aria-label="Призыв к действию">
+    <div class="final-cta__sky" aria-hidden="true">
+      <div class="final-cta__glow"></div>
+    </div>
+    <div class="final-cta__content">
+      <h2 class="final-cta__title reveal-on-scroll">Следующий горизонт уже открыт.</h2>
+      <div class="final-cta__actions reveal-on-scroll">
+        <button class="btn btn--primary magnetic" data-open-request>
+          <span>Назначить вылет</span>
+        </button>
+        <button class="btn btn--ghost magnetic" data-open-request>
+          <span>Связаться с авиационным консультантом</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 11. CONTACTS / FOOTER ============ -->
+<footer class="contacts" id="contacts" aria-label="Контакты">
+  <div class="contacts__grid">
+    <div class="contacts__brand">
+      <span class="nav__mark-glyph" aria-hidden="true">✦</span>
+      <span class="contacts__mark">SKY CATHEDRAL</span>
+      <p class="contacts__tagline">Свобода начинается выше горизонта.</p>
+    </div>
+
+    <div class="contacts__block">
+      <h3>Связаться</h3>
+      <a href="tel:+70000000000" class="contacts__link">+7 000 000-00-00</a>
+      <a href="mailto:fly@skycathedral.aero" class="contacts__link">fly@skycathedral.aero</a>
+    </div>
+
+    <div class="contacts__block">
+      <h3>Мессенджеры</h3>
+      <a href="#" class="contacts__link">Telegram</a>
+      <a href="#" class="contacts__link">WhatsApp</a>
+    </div>
+
+    <div class="contacts__block">
+      <h3>Навигация</h3>
+      <a href="#fleet" class="contacts__link">Флот</a>
+      <a href="#destinations" class="contacts__link">Направления</a>
+      <a href="#membership" class="contacts__link">Членство</a>
+    </div>
+
+    <div class="contacts__block">
+      <h3>Социальные сети</h3>
+      <a href="#" class="contacts__link">Instagram</a>
+      <a href="#" class="contacts__link">LinkedIn</a>
+    </div>
+  </div>
+
+  
+  <div class="contacts__legal">
+    <span>© 2026 Sky Cathedral. Все права защищены.</span>
+    <div class="contacts__legal-links">
+      <a href="#">Политика конфиденциальности</a>
+      <a href="#">Условия обслуживания</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ REQUEST MODAL ============ -->
+<div class="request-modal" id="requestModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="requestModalTitle">
+  <div class="request-modal__backdrop" data-close-request></div>
+  <div class="request-modal__panel">
+    <button class="request-modal__close" data-close-request aria-label="Закрыть форму">
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M2 2l16 16M18 2L2 18" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+
+    <span class="section-eyebrow">Заявка на перелёт</span>
+    <h2 id="requestModalTitle" class="request-modal__title">Расскажите нам о маршруте</h2>
+
+    <form class="request-form" id="requestForm" novalidate>
+      <div class="request-form__row">
+        <label for="reqFrom">Откуда</label>
+        <input type="text" id="reqFrom" name="from" placeholder="Москва" autocomplete="off">
+      </div>
+      <div class="request-form__row">
+        <label for="reqTo">Куда</label>
+        <input type="text" id="reqTo" name="to" placeholder="Лондон" autocomplete="off">
+      </div>
+      <div class="request-form__row request-form__row--split">
+        <div>
+          <label for="reqDate">Дата</label>
+          <input type="date" id="reqDate" name="date">
+        </div>
+        <div>
+          <label for="reqPax">Пассажиры</label>
+          <input type="number" id="reqPax" name="passengers" min="1" max="19" placeholder="4">
+        </div>
+      </div>
+      <div class="request-form__row">
+        <label for="reqContact">Телефон или email</label>
+        <input type="text" id="reqContact" name="contact" placeholder="Как с вами связаться">
+      </div>
+
+      <button type="submit" class="btn btn--primary request-form__submit magnetic">
+        <span>Отправить заявку</span>
+      </button>
+      <p class="request-form__note">Авиационный консультант свяжется с вами в течение пятнадцати минут.</p>
+    </form>
+
+    <div class="request-form__success" id="requestSuccess" aria-hidden="true">
+      <div class="request-form__success-mark" aria-hidden="true">✦</div>
+      <h3>Заявка принята</h3>
+      <p>Консультант свяжется с вами в течение пятнадцати минут.</p>
+    </div>
+  </div>
+</div>
+
+<script src="SkyCharter.js" defer></script>
+</body>
+</html>
